@@ -6,10 +6,12 @@
 	<version>1.0.0</version>
 	<packaging>war</packaging>
 
-	<properties>
-		<jvm.version>1.8</jvm.version>
+	<properties>		
 		<log4j.version>2.11.0</log4j.version>
 		<idm.spring.core.version>4.1.1.RELEASE</idm.spring.core.version>
+		
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>  
 		
 		<sonar.projectKey>manu-perez_calculator-test</sonar.projectKey>
 		<sonar.organization>manu-perez</sonar.organization>
