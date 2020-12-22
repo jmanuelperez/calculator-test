@@ -10,6 +10,10 @@
 		<jvm.version>1.8</jvm.version>
 		<log4j.version>2.11.0</log4j.version>
 		<idm.spring.core.version>4.1.1.RELEASE</idm.spring.core.version>
+		
+		<sonar.projectKey>manu-perez_calculator-test</sonar.projectKey>
+		<sonar.organization>manu-perez</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
 	<dependencies>
