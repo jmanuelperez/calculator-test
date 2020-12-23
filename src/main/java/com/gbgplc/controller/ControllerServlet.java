@@ -17,7 +17,11 @@ public class ControllerServlet extends HttpServlet {
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		doGet(req,resp);
+		try {
+			doGet(req,resp);
+		} catch (Exception e) {
+			  
+		}
 	}
 	
 	@Override
@@ -28,7 +32,7 @@ public class ControllerServlet extends HttpServlet {
 			PrintWriter out = resp.getWriter();
 		    out.println("OK");		    
 		} catch (Exception e) {
-			System.err.print("KO");  
+			  
 		}
 	}
 	
