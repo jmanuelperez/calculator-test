@@ -2,6 +2,8 @@ package com.gbgplc.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -20,7 +22,7 @@ public class ControllerServlet extends HttpServlet {
 		try {
 			doGet(req,resp);
 		} catch (Exception e) {
-			  
+			Logger.getGlobal().log(Level.WARNING, "Issues in DoPost");
 		}
 	}
 	
@@ -32,7 +34,7 @@ public class ControllerServlet extends HttpServlet {
 			PrintWriter out = resp.getWriter();
 		    out.println("OK");		    
 		} catch (Exception e) {
-			  
+			Logger.getGlobal().log(Level.WARNING, "Issues in DoGet");
 		}
 	}
 	
