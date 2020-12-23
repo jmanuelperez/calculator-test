@@ -1,0 +1,64 @@
+# Eclipse
+.classpath
+.project
+.tern-project
+.settings/
+.metadata/
+.recommenders/
+Servers/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Visual Studio
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.dll
+*.lib
+*.sbr
+
+# Maven
+log/
+target/
+
+#Other
+logs/
+bin/
+
+# Windows
+Thumbs.db
+
+# Mac
+.DS_Store
+
+# Chef backup files
+!chef/backup/
+
+# XSD files
+**/WEB-INF/wsdl/xsd/
+**/resources/xsd/
+**/core/ws/idm-core-ws-globalservices/trunk/src/main/resources/wsdl/**/*.xsd
+
+# Add exclamation marks ! at the begining of the next two ignore-directives (lines), in order to track changes of xsd files. 
+# The only changes should be freshly copied files to [oldWSDL]/xsd and [newWSDL]. 
+# Once done (added to git index, poss. committed and pushed), remove exclamation marks so this .gitignore file remains unchanged.
+**/core/ws/idm-core-ws-globalservices/trunk/src/main/resources/wsdl/**/xsd/*.xsd
+**/core/ws/idm-core-ws-globalservices/trunk/src/main/resources/wsdl/**/*.xsd
+
